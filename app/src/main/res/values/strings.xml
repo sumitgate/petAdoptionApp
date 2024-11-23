@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PetAdoptionApp</string>
+    <string name="pet_image">Pet Image</string>
+</resources>

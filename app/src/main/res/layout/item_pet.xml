@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:layout_margin="8dp"
+    android:background="@drawable/item_background"
+    android:elevation="4dp"
+    android:gravity="center_vertical">
+
+    <!-- Pet Image -->
+    <ImageView
+        android:id="@+id/ivPetImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/pet_image"
+        android:scaleType="centerCrop"
+        android:background="@drawable/rounded_image_background" />
+
+    <!-- Text Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <!-- Pet Name -->
+        <TextView
+            android:id="@+id/tvPetName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pet Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="4dp" />
+
+        <!-- Breed -->
+        <TextView
+            android:id="@+id/tvBreed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Breed: Labrador"
+            android:textSize="14sp"
+            android:textColor="#616161"
+            android:layout_marginBottom="2dp" />
+
+        <!-- Age -->
+        <TextView
+            android:id="@+id/tvAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age: 2 years"
+            android:textSize="14sp"
+            android:textColor="#616161"
+            android:layout_marginBottom="2dp" />
+
+        <!-- Area Code -->
+        <TextView
+            android:id="@+id/tvAreaCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Area Code: 12345"
+            android:textSize="14sp"
+            android:textColor="#616161" />
+    </LinearLayout>
+</LinearLayout>

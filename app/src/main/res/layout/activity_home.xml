@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background"
+    android:padding="16dp">
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/tvWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome!"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:padding="8dp" />
+
+    <!-- Static Text for App Info -->
+    <TextView
+        android:id="@+id/tvAppInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvWelcome"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Find a loving home for every pet!"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:textStyle="italic" />
+
+    <!-- Add Pet Button -->
+    <Button
+        android:id="@+id/btnAddPet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAppInfo"
+        android:layout_marginTop="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Add Pet"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <!-- Display Pets Button -->
+    <Button
+        android:id="@+id/btnDisplayPets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnAddPet"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Display Pets"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <!-- Logout Button -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDisplayPets"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Logout"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <!-- Static Footer Text -->
+    <TextView
+        android:id="@+id/tvFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="© 2024 Pet Adoption App. All rights reserved."
+        android:textSize="14sp"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

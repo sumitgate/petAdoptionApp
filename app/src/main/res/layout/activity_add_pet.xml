@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:id="@+id/tvAddPetHeading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add a Pet"
+        android:textSize="24sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="12dp"/>
+
+    <EditText
+        android:id="@+id/etPetName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Pet Name"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etBreed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Breed"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Age"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etAreaCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Area Code"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/etImageUri"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Image URI"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/darker_gray"
+        android:focusable="false"
+        android:background="@drawable/rounded_edit_text"
+        android:padding="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Image"
+        android:textColor="@android:color/white"
+        android:backgroundTint="#FF9800"
+        android:layout_marginBottom="12dp"
+        android:padding="8dp"
+        android:layout_gravity="center" />
+
+    <ImageView
+        android:id="@+id/ivPreview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:scaleType="centerCrop"
+        android:contentDescription="Selected Image Preview"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_image_border"/>
+
+    <Button
+        android:id="@+id/btnSavePet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Pet"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_button"
+        android:layout_marginBottom="12dp"
+        android:padding="8dp"
+        android:layout_gravity="center" />
+
+</LinearLayout>
